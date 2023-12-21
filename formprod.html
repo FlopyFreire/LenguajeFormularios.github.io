@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Florencia I.">
+    <meta name="description" content="formulario de registro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información sobre el producto</title>
+</head>
+<body>
+    <a href="../formularios/index.html"> Volver al inicio</a>
+    <form method="post">
+        <h1>Información sobre el producto</h1>
+        <fieldset>
+            <legend>Datos básicos</legend>
+            <label for="name">Nombre</label><br/>
+            <input type="text" name="nombre"  id=”name”  value="" size="25" maxlength=”15” />
+            <br/><br/>
+            <label for="des">Descripción </label> <br/>
+            <textarea id="des" name="des" cols="40" rows="6"></textarea><br/><br/>
+            <label for="imagen"> Foto  </label> 
+            <input type="file" name="adjunto" id="imagen" value="" size="25"/>
+            <br/><br/>
+            <input name="contador" type="checkbox" value="contador" />
+            <label for="contador">Añadir contador de visitas </label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for=”precio”> Precio </label>
+            <input type="text" name="precio" id="precio" value="" size="3" maxlength="3"/> €
+            <label for=”iva”> Impuestos </label>
+            <select id="iva" name="iva" >
+                <option value="4" selected="selected"> 4% </option>
+                <option value="7"> 7% </option>
+                <option value="16"> 16% </option>
+                <option value="25"> 25% </option>
+            </select>
+            <br/>
+            <label for="promo"> Promoción </label> <br/>
+            <input type="radio" name="promo" id="promo" value="ninguno" checked="checked" /> Ninguno <br/>
+            <input type="radio" name="promo" id="promo" value="transporte_gratuito" /> Transporte gratuito<br/>
+            <input type="radio" name="promo" id="promo" value="descuento" /> Descuento 5%
+        
+
+        </fieldset>
+    </form>
+</body>
+</html>

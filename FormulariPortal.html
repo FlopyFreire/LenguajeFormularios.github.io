@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Florencia I.">
+    <meta name="description" content="formulario de registro">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari de registre al Portal</title>
+</head>
+<body>
+    <a href="../formularios/index.html"> Volver al inicio</a>
+    <form method="post">
+        <h1>::Formulari de registre al Portal::</h1>
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label for=”name”> Nom: </label>
+            <input type="text" name="nombre"  id=”name”  value="Nom" size="25" maxlength=”15” />
+            <label for=”surname”> Cognoms: </label>
+            <input type="text" name="apellidos"  id=”surname”  value="Cognoms" size="25" maxlength=”15”  /><br/><br/>
+            <label for=”dni”> DNI: </label>
+            <input type="text" name="dni" id="dni" value="P.ex: 45987989X" size="15" maxlength="9" /><br/><br/>
+            <label for=”username”> Username: </label>
+            <input type="text" name="nombre"  id="username"  value="" size="25" maxlength=”15”  />
+            <label for="contrasena"> Clau: </label> 
+            <input type="password" name="contrasena" id="contrasena" value="" size="15" maxlength="10" />
+            <label for="contrasena"> Repetir clau: </label>
+            <input type="password" name="contrasena" id="contrasena" value="" size="15" maxlength="10" /><br/> <br/>
+            <label for="email"> E-Correu: </label>
+            <input type="email" name="email" id="email" value="usuari@domini.org" size="15" maxlength="40" />
+            <label for="edad">Franja d'edat: </label>
+            <select id="edad" name="edad">
+                <option value="menor que 16 anys" selected="selected"> Menor que 16 anys </option>
+                <option value="major que 16 anys"> Major que 16 anys </option>
+            </select>
+            <br/><br/>
+            <label for="sex"> Sexe: </label> 
+            <input type="radio" name="sexe" id="sex" value="home" /> Home
+            <input type="radio" name="sexe" id="sex" value="dona" /> Dona 
+            <br/><br/>
+            <label for=”pais”> Codi País </label>
+            <input type="text" name="pais"  id=”pais”  value="Codi del país dos caracters" size="16" maxlength=”2”  />
+            <label for=”zip”> Codi ZIP </label>
+            <input type="text" name="zip"  id=”zip”  value="El codi postal" size="16" maxlength=”2”  /><br/><br/>
+            <label for="imagen"> Imatge Personal:  </label> 
+            <input type="file" name="adjunto" id="imagen" value="" size="25"/>
+        </fieldset>
+        <fieldset>
+            <legend>Altres dades d'interès</legend>
+            <label for="interessos">Interessos: </label> <br/>
+            <input name="lenguatje_css" type="checkbox" value="CSS"/> CSS
+            <input name="lenguatje_html5" type="checkbox" value="HTML5"/> HTML5
+            <input name="lenguatje_javas" type="checkbox" value="javascript"/> Javascript <br/><br/>
+            <label for="coneixements">Coneixements: </label> <br/>
+            <input name="xarxes" type="checkbox" value="xarxes"/> Xarxes Socials
+            <input name="programaciohtml" type="checkbox" value="programaciohtml"/> Programació HTML
+            <input name="programaciocss" type="checkbox" value="programaciocss"/> Programació CSS
+            <input name="disseny" type="checkbox" value="disseny"/> Disseny
+            <br/><br/>
+            <label for="coment">Comentaris: </label> <br/>
+            <textarea id="coment" name="comentaris" cols="40" rows="9">Aqui disposeu d'espai per escriure</textarea>
+        </fieldset>
+        <br/>
+        <input type="submit" name="enviar" value="Enviar" />
+        <input type="reset" name="borrar" value="Esborrar" />
+        
+    </form>
+</body>
+</html>
